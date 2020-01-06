@@ -7,3 +7,5 @@ cat ./lorem/sed.txt
 cat ./lorem/at.txt ; cat ./lorem/lorem.txt
 sed -n 1,3p ./lorem-copy/sed.txt
 tail -n -3 ./lorem-copy/sed.txt
+sed -i '$a Homo homini lupus.' ./lorem-copy/sed.txt
+tail -n -3 ./lorem-copy/sed.txt
