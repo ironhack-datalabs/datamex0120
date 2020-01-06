@@ -17,6 +17,19 @@ Julio Cesar
 //Por cada archivo dentro de la carpeta lorem imprime el número de carácteres que tienen sus nombres. Intenta primero mostrar los archivos mediante un bucle for. Luego calcula la longitud de cada elemento de la iteración.//
 
 //1 - Imprime los ficheros//
-
+➜  lab-bash git:(lab-bash) ✗ for filename in $(ls lorem/)
+for> do 
+for> echo $filename
+for> done
+at.txt
+lorem.txt
+sed.txt
 
 //2 - Imprime las longitudes de los nombres de los ficheros.//
+
+for filename in $(ls lorem)
+do
+    ff=`echo $filename | cut -d '.' -f1`
+    echo -n "$ff "
+    echo ${#ff}
+done
