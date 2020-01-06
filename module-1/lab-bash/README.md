@@ -108,7 +108,7 @@ $ pwd
 * Lista los archivos que terminan por `.txt` en la carpeta lorem.
 
 ```console
-$ ls *txt
+$ ls *.txt
 ```
 
 * Cuenta el número de lineas que tiene el archivo `sed.txt` dentro de la carpeta lorem. Tendrás que encadenar `cat` y `wc` mediante el pipe `|`.
@@ -122,7 +122,7 @@ $ wc -l lorem/sed.txt
 - ¿Por qué se tiene que usar la pipa?
 
 ```console
-$ cat lorem/sed.txt | wc -l
+$ ls -dq *lorem* | wc -l
 ``` 
 
 * Encuentra todas las apariciones de `et` en `at.txt` dentro de la carpeta lorem.
@@ -189,7 +189,11 @@ $ echo $name
 $ mkdir $name
 ```
 
-* Elimina ese directorio. 
+* Elimina ese directorio.
+
+```console
+$ rm -r $name
+```
 
 * Por cada archivo dentro de la carpeta `lorem` imprime el número de carácteres que tienen sus nombres. Intenta primero mostrar los archivos mediante un bucle for. Luego calcula la longitud de cada elemento de la iteración. 
 1. Imprime los ficheros
