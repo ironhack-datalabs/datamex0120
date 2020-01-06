@@ -1,7 +1,7 @@
-#read name
-#echo $name
-#mkdir $name
-#rmdir $name
+read name
+echo $name
+mkdir $name
+rmdir $name
 
 for file in ./lorem/*
 do
