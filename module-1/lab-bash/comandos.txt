@@ -5,3 +5,5 @@ cp ./lorem/sed.txt lorem-copy
 cp ./lorem/at.txt lorem-copy ; cp ./lorem/lorem.txt lorem-copy
 cat ./lorem/sed.txt
 cat ./lorem/at.txt ; cat ./lorem/lorem.txt
+sed -n 1,3p ./lorem-copy/sed.txt
+tail -n -3 ./lorem-copy/sed.txt
