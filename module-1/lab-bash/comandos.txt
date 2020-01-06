@@ -14,3 +14,7 @@ echo $USER
 pwd
 ls *.txt
 cat ./lorem/sed.txt | wc -l
+ls -FR | grep 'lorem' | grep -v / | wc -l
+grep -r 'et' ./lorem
+grep -o ' et ' ./lorem/at.txt | wc -l
+grep -ro ' et ' ./lorem-copy | wc -l
