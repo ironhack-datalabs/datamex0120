@@ -5,7 +5,7 @@ Created on Mon Jan  6 11:56:01 2020
 @author: Data Analyst
 """
 
-def sumar(n = 333545):
+def sumar(n = 2):
     n = n +3 
     return n 
 
