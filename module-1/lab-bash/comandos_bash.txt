@@ -1,0 +1,75 @@
+# "imprimir hello world en pantalla bash"
+
+echo "Hello world"
+
+# "crear directorio llamado new_dir"
+
+mkdir new_dir
+
+# " eliminar new_dir"
+
+rm -rf new_dir
+
+# " copia de archivo sed.txt en carpeta lorem a carpeta lorem-copy"
+
+cp lorem/sed.txt lorem-copy/sed-copy.txt
+
+# "Copia de los dos archivos dentro de carpeta lorem a lorem-copy en un solo comando usando pipe"  
+
+
+
+#  
+
+
+# " muestra el contenido del archivo sed.txt "
+
+cat sed.txt
+
+
+# "muestra los archivos at.txt y lorem.txt"
+
+cat lorem/at.txt && cat lorem/lorem.txt
+
+# " muestra de las primeras 3 lineas de el archivo sed en la carpeta lorem-copy"
+
+head -n3 lorem-copy/sed-copy.txt
+
+# " agregar el texto homo homini lupus al final del archivo sed en lorem-copy
+
+echo "Homo homini lupus." >> lorem-copy/sed-copy.txt
+
+# " mostrar las ultimas 3 lineas de el archivo sed.txt dentro de la carpeta lorem-copy"
+
+tail -n3 lorem-copy/sed-copy.txt 
+
+# " encontrar al usuario activo en el sistema "
+
+whoami
+
+# " encontrar en donde estoy en mi sistema de ficheros"
+
+pwd
+
+# " encontrar lista de archivos que terminan con txt que se encuentran en la carpeta lorem"
+
+find lorem/ -name "*.txt"
+
+# " numero de lineas que tiene el archivo sed.txt en lorem "
+
+cat lorem/sed.txt | wc -m lorem/sed.txt 
+
+# " numero de archivos con nombre lorem que existen dentro de la carpeta y subcarpetas "
+
+find | grep "lorem" | wc -l
+
+# " encuentra todas las apariciones de et en at.txt dentro de la carpeta lorem"
+
+grep  -rnw lorem/at.txt -e "et"
+
+# " cuenta el numero de apariciones de et en at.txt dentro de la carpeta lorem"
+
+
+# " numero de apariciones del string et en todos los archivos del directorio lorem-copy
+
+~/Desktop/data-analysis-course/datamex0120/module-1/lab-bash/lorem-copy$ grep -r "et"
+
