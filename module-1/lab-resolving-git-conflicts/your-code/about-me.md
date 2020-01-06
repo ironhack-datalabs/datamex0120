@@ -1,4 +1,6 @@
 ArturoQR
+BLABLABLA
+BLABLA
 
 Los Angeles
 Trying to generate a merge conflict
