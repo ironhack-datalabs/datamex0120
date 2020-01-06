@@ -1,0 +1,22 @@
+// BONUS //
+
+//Almacena en una variable name tu nombre mediante el comando read.//
+➜  lab-bash git:(lab-bash) ✗ read name
+Julio Cesar
+
+//Imprime esa variable.//
+➜  lab-bash git:(lab-bash) ✗ echo $name
+Julio Cesar
+
+//Crea un directorio nuevo que se llame como el contenido de la variable name.//
+➜  lab-bash git:(lab-bash) ✗ mkdir $name
+
+//Elimina ese directorio.//
+➜  lab-bash git:(lab-bash) ✗ rmdir $name
+
+//Por cada archivo dentro de la carpeta lorem imprime el número de carácteres que tienen sus nombres. Intenta primero mostrar los archivos mediante un bucle for. Luego calcula la longitud de cada elemento de la iteración.//
+
+//1 - Imprime los ficheros//
+
+
+//2 - Imprime las longitudes de los nombres de los ficheros.//
