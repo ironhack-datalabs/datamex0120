@@ -1,15 +1,15 @@
-# Who am I: ArturoQR
+ArturoQR
 
-* Where are you from? Loa Angeles
-* What do you do? Trying to generate a merge conflict
-* Do you have previous experience with technology/data?  So so
+Los Angeles
+Trying to generate a merge conflict
+So so
 
-# Why am I here: I want to learn how to do data analysis
+I want to learn how to do data analysis
 
-* What has brought you to Ironhack? Intenert adevrtisement?????
-* What knowledge/skills do you expect to learn in this bootcamp? Every one
+Internet adevrtisement?????
+All of them
 
-# What will I do after the bootcamp? Hope to find a great job on this
+Hope to find a great job on this
 
 * Which industry will you seek employment in? Technology and data
 * What will your future role look like? Great
