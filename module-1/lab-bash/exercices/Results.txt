@@ -85,7 +85,7 @@ lorem/at.txt lorem/lorem.txt lorem/sed.txt
        8
 
 //Cuenta el número de archivos que empiezan por lorem que están en este directorio y en directorios internos//
-➜  lab-bash git:(lab-bash) ✗ ls -d lorem* | wc -l
+➜  lab-bash git:(lab-bash) ✗ ls -FR | grep 'lorem' | grep -v / | wc -l
        2
 
 //Encuentra todas las apariciones de et en at.txt dentro de la carpeta lorem.//
