@@ -1,3 +1,4 @@
 echo "Hello World"
 mkdir new_dir
 rmdir new_dir
+cp ./lorem/sed.txt lorem-copy
