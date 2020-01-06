@@ -1,0 +1,101 @@
+//Imprime en consola "Hello World”.//
+➜  lab-bash git:(lab-bash) ✗ echo 'Hello World'
+Hello World
+
+//Crea un directorio nuevo llamado new_dir.//
+➜  lab-bash git:(lab-bash) ✗ mkdir new_dir
+
+//Elimina ese directorio.//
+➜  lab-bash git:(lab-bash) ✗ rmdir new_dir
+
+//Copia el archivo sed.txt dentro de la carpeta lorem a la carpeta lorem-copy.//
+➜  lab-bash git:(lab-bash) ✗ cp lorem/sed.txt lorem-copy
+
+//Copia los otros dos archivos de la carpeta lorem a la carpeta lorem-copy en una sola linea mediante el pipe ;.//
+➜  lab-bash git:(lab-bash) ✗ cp lorem/at.txt lorem-copy | cp lorem/lorem.txt lorem-copy          
+
+//Muestra el contenido del archivo sed.txt dentro de la carpeta lorem.//
+➜  lab-bash git:(lab-bash) ✗ cat lorem/sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?%      
+
+//Muestra el contenido de los archivos at.txt y lorem.txt dentro de la carpeta lorem.//
+➜  lab-bash git:(lab-bash) ✗ cat lorem/at.txt && cat lorem/lorem.txt
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+Et harum quidem rerum facilis est et expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
+ut et voluptates repudiandae sint et molestiae non recusandae.
+Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellatLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.%                                                 
+
+//Visualiza las primeras 3 linas del archivo sed.txt dentro de la carpeta lorem-copy//
+➜  lab-bash git:(lab-bash) ✗ head -3 lorem-copy/sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+//Visualiza las ultimas 3 linas del archivo sed.txt dentro de la carpeta lorem-copy//
+➜  lab-bash git:(lab-bash) ✗ tail -3 lorem-copy/sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?%                  
+
+//Añade Homo homini lupus. al final de archivo sed.txt dentro de la carpeta lorem-copy.//
+➜  lab-bash git:(lab-bash) ✗ echo 'Homo homini lupus.' >> lorem-copy/sed.txt
+
+//Visualiza las últimas 3 linas del archivo sed.txt dentro de la carpeta lorem-copy. Deberías ver ahora Homo homini lupus..//
+➜  lab-bash git:(lab-bash) ✗ tail -3 lorem-copy/sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus.
+
+//Sustituye todas las apariciones de et por ET del archivo at.txt dentro de la carpeta lorem a la carpeta lorem-copy. Deberás usar sed.//
+➜  lab-bash git:(lab-bash) ✗ sed 's/et/ET/g' lorem/at.txt > lorem-copy/at.txt
+
+//Encuentra al usuario activo en el sistema.//
+➜  lab-bash git:(lab-bash) ✗ id
+uid=501(juliorenteria) gid=20(staff) groups=20(staff),12(everyone),61(localaccounts),79(_appserverusr),80(admin),81(_appserveradm),98(_lpadmin),701(com.apple.sharepoint.group.1),33(_appstore),100(_lpoperator),204(_developer),250(_analyticsusers),395(com.apple.access_ftp),398(com.apple.access_screensharing),399(com.apple.access_ssh)
+➜  lab-bash git:(lab-bash) ✗ id -F
+Julio Renteria
+
+//Encuentra dónde estás en tu sistema de ficheros.//
+➜  lab-bash git:(lab-bash) ✗ pwd
+/Users/juliorenteria/dev/Ironhack/datamex0120/module-1/lab-bash
+
+//Lista los archivos que terminan por .txt en la carpeta lorem.//
+➜  lab-bash git:(lab-bash) ✗ echo lorem/*.txt
+lorem/at.txt lorem/lorem.txt lorem/sed.txt
+
+//Cuenta el número de lineas que tiene el archivo sed.txt dentro de la carpeta lorem. Tendrás que encadenar cat y wc mediante el pipe |.//
+➜  lab-bash git:(lab-bash) ✗ cat lorem/sed.txt | wc -l
+       8
+
+//Cuenta el número de archivos que empiezan por lorem que están en este directorio y en directorios internos//
+➜  lab-bash git:(lab-bash) ✗ ls -d lorem* | wc -l
+       2
+
+//Encuentra todas las apariciones de et en at.txt dentro de la carpeta lorem.//
+➜  lab-bash git:(lab-bash) ✗ grep -c "et" lorem/at.txt
+7
+
+//Cuenta el número de apariciones del string et en at.txt dentro de la carpeta lorem. Para ello debes obtener sólo los string buscados y contar las lineas.//
+➜  lab-bash git:(lab-bash) ✗ grep -o 'et' lorem/at.txt | wc -l
+      10
+
+//Cuenta el número de apariciones del string et en todos los archivos del directorio lorem-copy.//
+➜  lab-bash git:(lab-bash) ✗ grep -o 'et' lorem-copy/*.txt | wc -l
+       7
