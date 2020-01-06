@@ -1,4 +1,4 @@
 ##Esto es una prueba de megre-conflicts
 
-print("AHORA HA SIDO ALTERADA!!!!!")
+print("ESTA ES LA LINEA ORIGINAL!!!!!")
 print("BLABLABLA----BLABLA")
