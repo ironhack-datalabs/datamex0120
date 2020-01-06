@@ -101,17 +101,49 @@ $ who
 
 * Encuentra dónde estás en tu sistema de ficheros.
 
+```console
+$ pwd
+```
+
 * Lista los archivos que terminan por `.txt` en la carpeta lorem.
 
-* Cuenta el número de lineas que tiene el archivo `sed.txt` dentro de la carpeta lorem. Tendrás que encadenar `cat` y `wc` mediante el pipe `|`. 
+```console
+$ pwd
+```
+
+* Cuenta el número de lineas que tiene el archivo `sed.txt` dentro de la carpeta lorem. Tendrás que encadenar `cat` y `wc` mediante el pipe `|`.
+
+```console
+$ pwd
+``` 
 
 * Cuenta el número de **archivos** que empiezan por `lorem` que están en este directorio y en directorios internos
 
+- ¿Por qué se tiene que usar la pipa?
+
+```console
+$ cat lorem/sed.txt | wc -l
+``` 
+
 * Encuentra todas las apariciones de `et` en `at.txt` dentro de la carpeta lorem.
+
+```console
+$ grep lorem/sed.txt | wc -l
+``` 
+
 
 * Cuenta el número de apariciones del string `et` en `at.txt` dentro de la carpeta lorem. Para ello debes obtener sólo los string buscados y contar las lineas. 
 
+```console
+grep -c "et" lorem/at.txt
+```
+
+
 *  Cuenta el número de apariciones del string `et` en todos los archivos del directorio lorem-copy. 
+
+```console
+grep "et" lorem-copy/*
+```
 
 
 ## Ficheros bash
