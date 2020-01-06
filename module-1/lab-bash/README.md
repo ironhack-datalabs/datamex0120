@@ -122,27 +122,27 @@ $ wc -l lorem/sed.txt
 - ¿Por qué se tiene que usar la pipa?
 
 ```console
-$ ls -dq *lorem* | wc -l
+$ ls -FR | grep 'lorem' | grep -v / | wc -l
 ``` 
 
 * Encuentra todas las apariciones de `et` en `at.txt` dentro de la carpeta lorem.
 
 ```console
-$ grep -c "et" lorem/at.txt
+$ grep " et " lorem/at.txt
 ``` 
 
 
 * Cuenta el número de apariciones del string `et` en `at.txt` dentro de la carpeta lorem. Para ello debes obtener sólo los string buscados y contar las lineas. 
 
 ```console
-$ grep -c "et" lorem/at.txt
+$ grep " et " lorem/at.txt -o | wc -l
 ```
 
 
 *  Cuenta el número de apariciones del string `et` en todos los archivos del directorio lorem-copy. 
 
 ```console
-$ grep -c "et" lorem-copy/*
+$ grep -c " et " lorem-copy/*
 ```
 
 
@@ -197,4 +197,14 @@ $ rm -r $name
 
 * Por cada archivo dentro de la carpeta `lorem` imprime el número de carácteres que tienen sus nombres. Intenta primero mostrar los archivos mediante un bucle for. Luego calcula la longitud de cada elemento de la iteración. 
 1. Imprime los ficheros
-2. Imprime las longitudes de los nombres de los ficheros. 
+2. Imprime las longitudes de los nombres de los ficheros.
+
+
+```console
+for file in lorem/*; do
+	filename=$(basename "$file")
+	echo $filename
+	size=${#filename}
+	echo $size
+done
+```
