@@ -3,4 +3,4 @@ y = 4
 
 suma = x + y
 mult = x * y
-print('suma: ', suma,'mult: ',mult)
+print('mult1 :',mult,'suma: ', suma,'mult: ',mult)
