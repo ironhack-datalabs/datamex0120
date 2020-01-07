@@ -21,15 +21,29 @@ exercices  inputs  lorem  lorem-copy  modules  outputs  README.md
 
 * Imprime en consola "Hello World".
 
+echo "Hello world"
+
 * Crea un directorio nuevo llamado `new_dir`.
+
+mkdir new_dir
 
 * Elimina ese directorio.
 
+rmdir new_dir
+
 * Copia el archivo `sed.txt` dentro de la carpeta lorem a la carpeta lorem-copy. 
+
+cd lorem
+
+cp sed.txt /Users/al/Documents/datamex0120/module-1/lab-bash/lorem-copy/
 
 * Copia los otros dos archivos de la carpeta lorem a la carpeta lorem-copy en una sola linea mediante el pipe `;`. 
 
+cp at.txt /Users/al/Documents/datamex0120/module-1/lab-bash/lorem-copy/; cp lorem.txt /Users/al/Documents/datamex0120/module-1/lab-bash/lorem-copy/
+
 * Muestra el contenido del archivo `sed.txt` dentro de la carpeta lorem.
+
+cat sed.txt
 
 * Muestra el contenido de los archivos `at.txt` y `lorem.txt` dentro de la carpeta lorem. 
 
