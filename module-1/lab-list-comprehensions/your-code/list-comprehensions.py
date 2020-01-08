@@ -99,3 +99,21 @@ print(nestList2)
 
 # 6. Use a list comprehension to select and print the names of all CSV files in the /data directory.
 
+
+print("-"*200)
+
+path = '../data'
+extension = 'csv'
+os.chdir(path)
+result = glob.glob('*.{}'.format(extension))
+print(result)
+
+
+li = []
+for r in result:
+    df = pd.read_csv(r, index_col=None, header=0)
+    li.append(df)
+
+frame = pd.concat(li, axis=0, ignore_index=True)
+
+print(frame.iloc[:10])
