@@ -135,3 +135,8 @@ for i in frame:
 
 # 9. Use a list comprehension to add a new column (20) to the data frame whose values are the values in column 19 minus 0.1. Display the top 10 rows of the resulting data frame
 
+print(frameCopy)
+
+
+
+# 10. Use a list comprehension to extract and print all values from the data set that are between 0.7 and 0.75.
