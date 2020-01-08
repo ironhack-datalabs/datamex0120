@@ -117,3 +117,21 @@ for r in result:
 frame = pd.concat(li, axis=0, ignore_index=True)
 
 print(frame.iloc[:10])
+
+print("-"* 200)
+# 8. Use a list comprehension to select and print the column numbers for columns from the data set whose median is less than 0.48.
+
+
+print(frame.median())
+
+
+s = []
+
+for i in frame:
+  if frame[i].median() < 0.48:
+    print(s.append(i))
+
+
+
+# 9. Use a list comprehension to add a new column (20) to the data frame whose values are the values in column 19 minus 0.1. Display the top 10 rows of the resulting data frame
+
