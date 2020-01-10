@@ -46,4 +46,29 @@ class Saxon(Soldier):
 
 
 class War:
-    pass
+    # vikingos pelean sajones
+    def __init__(self,):
+    	War.vikingArmy = []
+    	War.saxonArmy = []
+
+    def addViking(self, viking):
+    	War.vikingArmy.append(viking)
+
+
+    def addSaxon(self, saxon):
+    	War.saxonArmy.append(saxon)
+
+
+    def vikingAttack(self):
+    	random_index = randint(0, len(War.saxonArmy))
+    	viking = random.choice(War.saxonArmy)
+
+    	War.saxonArmy[random_index].receiveDamage(viking.strength)
+
+    	return ''
+
+    def saxonArmyAttack(self):
+    	random_index = randint(0, len(War.vikingArmy))
+    	viking = random.choice(War.saxonArmy)
+
+    	War.saxonArmy[random_index].receiveDamage(viking.strength)
