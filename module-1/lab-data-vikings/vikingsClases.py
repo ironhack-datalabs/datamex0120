@@ -1,3 +1,4 @@
+from random import *
 
 # Soldier
 class Soldier:
@@ -38,7 +39,29 @@ class Saxon(Soldier):
 # End Saxon
 
 # War
-
-
 class War:
-    pass
+    def __init__(self):
+        War.vikingArmy = []
+        War.saxonArmy = []
+
+    def addViking(self, viking):
+        War.vikingArmy.append(viking)
+
+    def addSaxon(self, saxon):
+        War.saxonArmy.append(saxon)
+
+    def vikingAttack(self):
+        random_index = randint(0,len(War.saxonArmy))
+        viking = choice(War.vikingArmy)
+
+        War.saxonArmy[random_index].receiveDamage(viking.strength)
+
+        #return 'result of calling `receiveDamage()` of a `Saxon`' + str(viking.strength)
+
+    def saxonAttack(self):
+        random_index = randint(0,len(War.vikingArmy))
+        saxon = choice(War.saxonArmy)
+
+        War.vikingArmy[random_index].receiveDamage(saxon.strength)
+
+        #return result of calling `receiveDamage()` of a `Viking` + str(saxon.strength)
