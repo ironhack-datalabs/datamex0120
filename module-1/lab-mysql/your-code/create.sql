@@ -21,9 +21,9 @@ CREATE TABLE IF NOT EXISTS `lab_mysql`.`Stores` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
   `country` VARCHAR(45) NOT NULL,
-  `state` VARCHAR(45) NOT NULL,
-  `city` VARCHAR(45) NOT NULL,
-  `address` VARCHAR(255) NOT NULL,
+  `state` VARCHAR(45) NULL,
+  `city` VARCHAR(45) NULL,
+  `address` VARCHAR(255) NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS `lab_mysql`.`Customers` (
   `city` VARCHAR(45) NULL,
   `state` VARCHAR(45) NULL,
   `country` VARCHAR(45) NULL,
-  `zip_code` SMALLINT NULL,
+  `zip_code` INT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
