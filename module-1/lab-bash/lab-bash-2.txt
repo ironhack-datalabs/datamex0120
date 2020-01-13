@@ -1,0 +1,66 @@
+echo 'echo "Hello World"'
+echo "Hello World"
+echo -e "\nmkdir new_dir"
+mkdir new_dir
+ls
+echo -e "\nrmdir new_dir"
+rmdir new_dir
+ls
+echo -e "\ncp ./lorem/sed.txt lorem-copy"
+cp ./lorem/sed.txt lorem-copy
+ls lorem-copy
+echo -e "\ncp ./lorem/at.txt lorem-copy ; cp ./lorem/lorem.txt lorem-copy"
+cp ./lorem/at.txt lorem-copy ; cp ./lorem/lorem.txt lorem-copy
+ls lorem-copy
+echo -e "\ncat ./lorem/sed.txt"
+cat ./lorem/sed.txt
+echo -e "\ncat ./lorem/at.txt ; cat ./lorem/lorem.txt"
+cat ./lorem/at.txt ; cat ./lorem/lorem.txt
+echo -e "\n"
+echo -e "head -3 ./lorem/sed.txt"
+head -3 ./lorem/sed.txt
+echo -e "\ntail -3 ./lorem/sed.txt"
+tail -3 ./lorem/sed.txt
+echo -e '\necho -n "Homo homini lupus." >> ./lorem-copy/sed.txt'
+echo -n "Homo homini lupus." >> ./lorem-copy/sed.txt
+echo -e "\n"
+echo -e "tail -3 ./lorem-copy/sed.txt"
+tail -3 ./lorem-copy/sed.txt
+echo -e "\n"
+echo -e "sed 's/et/ET/g' ./lorem-copy/at.txt"
+sed 's/et/ET/g' ./lorem-copy/at.txt
+echo -e "\n"
+echo -e 'echo "whoami"'
+whoami
+echo -e '\necho "pwd"'
+pwd
+echo -e "\nls ./lorem/*.txt"
+ls ./lorem/*.txt
+echo -e "\ncat ./lorem/sed.txt ; wc -l ./lorem/sed.txt"
+cat ./lorem/sed.txt ; wc -l ./lorem/sed.txt
+echo -e "\n"
+echo -e 'find -iname "lorem*"'
+find -iname "lorem*"
+echo -e "\ngrep et ./lorem/at.txt"
+grep et ./lorem/at.txt
+echo -e "\ngrep -n et ./lorem/at.txt ; grep -c et ./lorem/at.txt"
+grep -n et ./lorem/at.txt ; grep -c et ./lorem/at.txt
+echo -e "\ngrep -Rc et ./lorem-copy"
+grep -Rc et ./lorem-copy
+#!/bin/bash
+/bin/echo "Escribe tu nombre: "
+read name
+mkdir $name
+/bin/echo "Se ha creado una carpeta llamada "$name
+ls
+rmdir $name
+/bin/echo "Se ha eliminado la carpeta llamada "$name
+ls
+for i in $( ls lorem ); do
+        echo item: $i
+done
+for i in $( ls lorem ); do
+       	nombre_archivo=`echo "$i" | cut -d '.' -f1`
+	echo -n	$nombre_archivo ": "
+	echo ${#nombre_archivo}
+done

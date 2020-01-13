@@ -1,0 +1,37 @@
+echo "Hello World"
+mkdir new_dir
+rmdir new_dir
+cp ./lorem/sed.txt lorem-copy
+cp ./lorem/at.txt lorem-copy ; cp ./lorem/lorem.txt lorem-copy
+cat ./lorem/sed.txt
+cat ./lorem/at.txt ; cat ./lorem/lorem.txt
+head -3 ./lorem/sed.txt
+tail -3 ./lorem/sed.txt
+echo -n "Homo homini lupus." >> ./lorem-copy/sed.txt
+tail -3 ./lorem-copy/sed.txt
+sed 's/et/ET/g' ./lorem-copy/at.txt
+whoami
+pwd
+ls ./lorem/*.txt
+cat ./lorem/sed.txt ; wc -l ./lorem/sed.txt
+find -iname "lorem*"
+grep et ./lorem/at.txt
+grep -n et ./lorem/at.txt ; grep -c et ./lorem/at.txt
+grep -Rc et ./lorem-copy
+#!/bin/bash
+/bin/echo "Escribe tu nombre: "
+read name
+mkdir $name
+/bin/echo "Se ha creado una carpeta llamada "$name
+ls
+rmdir $name
+/bin/echo "Se ha eliminado la carpeta llamada "$name
+ls
+for i in $( ls lorem ); do
+        echo item: $i
+done
+for i in $( ls lorem ); do
+       	nombre_archivo=`echo "$i" | cut -d '.' -f1`
+	echo -n	$nombre_archivo ": "
+	echo ${#nombre_archivo}
+done
