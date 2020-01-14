@@ -27,6 +27,4 @@ seedData = [
 ]
 session.bulk_save_objects(seedData)
 session.commit()
-
-
 session.close()
