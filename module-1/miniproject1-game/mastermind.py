@@ -1,4 +1,3 @@
-
 import random
 
 
@@ -14,6 +13,7 @@ for i in range(4): columna.append(False)
 running = True
 dificultad = 'Facil'
 nivel = 6
+inicio = False
 
 #flujo del juego
 #print(codigo)
@@ -23,18 +23,29 @@ print('Descifre una combinación de 4 números')
 #cliclo principal
 while running == True:
 
-    print('Escriba la dificultad de las siguiente opciones: Facil - Medio - Dificil.\nEscriba "Reglas" para conocer las reglas del juego')
-    dificultad = input()
+    while inicio == False:#La variable inicio arranca al juego, por la posibilida de solicitar las reglas
+        print('Escriba la dificultad de las siguiente opciones: Facil - Medio - Dificil.\nEscriba "Reglas" para conocer las reglas del juego')
+        dificultad = input()
     
-    if dificultad == 'Dificil' or dificultad == 'dificil':
-        nivel = 10        
-    elif dificultad == 'Medio' or dificultad == 'medio':
-        nivel = 7
-    elif dificultad == 'Reglas':
-        pass
-    else:
-        dificultad = 'facil'
-        nivel = 5
+        if dificultad == 'Dificil' or dificultad == 'dificil':
+            nivel = 10 
+            inicio = True
+        elif dificultad == 'Medio' or dificultad == 'medio':
+            nivel = 7
+            inicio = True
+        elif dificultad == 'Reglas':
+            print("Mastermind es un juego de habilidad y lógica que consiste en descubrir una secuencia de números oculta.")
+            print('Este juego normalmente esta diseñado para jugarse con esferas de colores, pero para fines prácticos')
+            print('sustituimos las esferas por numeros.')
+            print('En cada secuencia ingresara se regresaran dos pistas: La primera es la cantidad de números en la secuencia')
+            print('colocados de forma correcta dentro de la secuenca. La segunda es la cantidad de números colocados  en la')
+            print('secuencia que existen dentro de ella pero que están en un lugar incorrecto.')
+            print('Se cuenta con 10 oportunidades para descubrir la secuencia y en caso de encontrarla el juego te decreta')
+            print('ganador\n')    
+        else:
+            dificultad = 'facil'
+            nivel = 5
+            inicio = True
     
     print('Ha seleccionado dificultad {}, la clave a descifrar tienen numeros del 0 al {}. Los números pueden repetirse'.format(dificultad, nivel))
     
@@ -95,11 +106,11 @@ while running == True:
         print(numok_lugok, 'bien ubicado', numok_lugnok, 'mal ubicados')
     
         if numok_lugok == 4: 
-            print('Ganaste! el código era: ', codigo)
+            print('------\nGanaste! el código era: ', codigo)
             break
     
     if numok_lugok < 4:
-        print('Perdiste :( la combinación era:', codigo )
+        print('------\nPerdiste :( la combinación era:', codigo )
             
     print('Para jugar otra vez escribe "si"; para terminar solo da enter o escribe cualquier cosa')
     continuar = input()
@@ -110,5 +121,4 @@ while running == True:
         print('Gracias por jugar Mastermind para Python')
         running = False
         break
-            
     
