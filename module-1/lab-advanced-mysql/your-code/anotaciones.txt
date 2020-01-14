@@ -1,0 +1,2 @@
+# 1 en la tabla de sales un titulo puede aparecer varias veces, entonces calcular los 3 libros que mas ventas han tenido sin mostrar repetidos 
+# paso 1 calcular el royalty
