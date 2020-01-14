@@ -30,3 +30,17 @@ FROM (
 	  JOIN publishers
 	  ON titles.pub_id = publishers.pub_id) summary
 GROUP BY AUTHOR_ID, PUBLISHER;
+
+/* Challenge 3 */
+SELECT	authors.au_id AS AUTHOR_ID,
+		au_lname AS LAST_NAME,
+        au_fname AS FIRST_NAME,
+        COUNT(*) AS TOTAL 
+FROM sales
+	JOIN titleauthor
+	ON sales.title_id = titleauthor.title_id
+    JOIN authors
+    ON titleauthor.au_id = authors.au_id
+GROUP BY authors.au_id
+ORDER BY TOTAL DESC 
+LIMIT 3;
