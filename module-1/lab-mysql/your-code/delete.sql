@@ -1,0 +1,1 @@
+delete from cars where Id=4;
