@@ -1,8 +1,9 @@
 USE publications;
+/*---- CHALLENGE 1 ----*/
 /*PASO 1 y 2*/
+DROP TEMPORARY TABLE IF EXISTS authorroyalties;
 CREATE TEMPORARY TABLE publications.authorroyalties
-(SELECT 
-	ta.title_id, ta.au_id,t.price,t.royalty, (t.price * s.qty*t.royalty/100*ta.royaltyper/100) as sales_royalty
+(SELECT ta.title_id, ta.au_id,t.price,t.royalty, (t.price * s.qty*t.royalty/100*ta.royaltyper/100) as sales_royalty
 FROM 
 	titleauthor AS ta
 INNER JOIN 
@@ -17,14 +18,8 @@ INNER JOIN
 
 /*PASO 3*/
 
-ALTER TABLE authorroyalties
-DROP COLUMN title_id,
-DROP COLUMN price,
-DROP COLUMN royalty;
-
-SELECT * FROM authorroyalties ORDER BY au_id;
-
-SELECT au_id,sum(sales_royalty)FROM authorroyalties
+(SELECT au_id,sum(sales_royalty)FROM authorroyalties
 GROUP BY au_id
 ORDER BY sum(sales_royalty) DESC
-LIMIT 3;
+LIMIT 3
+);
