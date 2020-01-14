@@ -6,15 +6,16 @@ from sqlalchemy.orm import relationship, sessionmaker
 from sqlalchemy import create_engine
 from sqlalchemy_utils import database_exists, create_database
 
+# Get mySQL password from environment variable
 myPassword = os.environ['mySQLPassword']
 
-
-dbURL="mysql+mysqlconnector://root:{}@127.0.0.1:3306/carLab".format(myPassword)
-
-
-#######
+# Connect to database engine
+# I had some issues connecting to mySQL via SQL alchemy
+# There appeared to be some compatability issues with mySQL and python3
+# I think pip3 install mysql-connector-python solved it for me which appears to be implemented below
+# I found out about that from the following site:
 # https://www.a2hosting.com/kb/developer-corner/mysql/connecting-to-mysql-using-python
-# I had some issues connecting python3 to mysql, I think pip3 install mysql-connector-python solved it
+dbURL="mysql+mysqlconnector://root:{}@127.0.0.1:3306/carLab".format(myPassword)
 
 
 # Connect to engine
@@ -83,7 +84,7 @@ class Customer(Base):
 
 
 	address = Column(
-		String(20), nullable=False)
+		String(50), nullable=False)
 
 	city = Column(
 		String(20), nullable=False)
@@ -141,18 +142,3 @@ class Invoice(Base):
 # Create the database
 Base.metadata.create_all(engine)
 print(database_exists(engine.url))
-
-
-# Seeding the database
-# https://stackoverflow.com/a/31205155/5420796
-
-
-#s = Session()
-#objects = [
-#    Inventory(name="u1"),
-#    User(name="u2"),
-#    User(name="u3")
-#]
-#s.bulk_save_objects(objects)
-#s.commit()
-#
