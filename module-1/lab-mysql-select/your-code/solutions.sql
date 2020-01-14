@@ -60,17 +60,17 @@ GROUP BY authors.au_id
 ORDER BY TOTAL DESC;
 
 /* Bonus */
-/*
 SELECT	authors.au_id AS AUTHOR_ID,
 		au_lname AS LAST_NAME,
         au_fname AS FIRST_NAME,
-        IFNULL(COUNT(sales.title_id), 0) AS TOTAL
-        /*AS PROFIT*/
-/*
+        (titles.advance + IFNULL(SUM(sales.qty), 0) * titles.royalty) * titleauthor.royaltyper /100  AS PROFIT
 FROM titleauthor
 	RIGHT JOIN authors
 	ON titleauthor.au_id = authors.au_id
     LEFT JOIN sales
     ON titleauthor.title_id = sales.title_id
-GROUP BY authors.au_id
-ORDER BY TOTAL DESC;
+    LEFT JOIN titles
+    ON sales.title_id = titles.title_id
+GROUP BY authors.au_id, titles.title_id,titleauthor.royaltyper
+ORDER BY PROFIT DESC
+LIMIT 3;
