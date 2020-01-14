@@ -46,11 +46,11 @@ ORDER BY TOTAL DESC
 LIMIT 3;
 
 
-/* Challenge 4 *//*
+/* Challenge 4 */
 SELECT	authors.au_id AS AUTHOR_ID,
 		au_lname AS LAST_NAME,
         au_fname AS FIRST_NAME,
-        IFNULL(COUNT(sales.title_id), 0) AS TOTAL
+        IFNULL(SUM(sales.qty), 0) AS TOTAL
 FROM titleauthor
 	RIGHT JOIN authors
 	ON titleauthor.au_id = authors.au_id
