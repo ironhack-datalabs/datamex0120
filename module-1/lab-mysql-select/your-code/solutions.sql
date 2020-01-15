@@ -57,16 +57,18 @@ GROUP BY authors.author_id
 ORDER BY profit
 LIMIT 3;
 
-SELECT authors.au_id, authors.au_lname, authors.au_fname, titles.advance + IFNULL(sales.qty,0)*IFNULL(titles.price,0)*titleauthor.royaltyper/100 as profit
-FROM authors
-RIGHT JOIN titleauthor
-ON authors.au_id = titleauthor.au_id
+SELECT authors.au_id AUTHORS_ID, authors.au_lname AS AUTHORS_LNAME, authors.au_fname AS AU_FNAME,
+ROUND((titles.price + IFNULL(SUM(sales.qty), 0) * titles.royalty)/100 * titleauthor.royaltyper /100,5)  AS PROFIT
+FROM authors 
+RIGHT JOIN titleauthor 
+ON titleauthor.au_id = authors.au_id
 RIGHT JOIN titles
 ON titleauthor.title_id = titles.title_id
-RIGHT JOIN roysched
-ON titles.title_id = roysched.title_id
-GROUP BY authors.au_id
-ORDER BY profit
+LEFT JOIN sales
+ON sales.title_id = titleauthor.title_id
+GROUP BY authors.au_id, titleauthor.au_id, titleauthor.title_id, titles.title_id, sales.qty
+ORDER BY PROFIT DESC
 LIMIT 3;
+
 
 
