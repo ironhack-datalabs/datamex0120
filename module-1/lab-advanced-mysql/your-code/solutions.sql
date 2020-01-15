@@ -37,9 +37,11 @@ FROM	(
 						ORDER BY TITLE_ID
 					) royalties
 			GROUP BY TITLE_ID, AUTHOR_ID
-		) authors_profit;
+		) authors_profit
+ORDER BY PROFITS DESC
+LIMIT 3;
 
-/***** Challange 2 *****/
+/***** Challenge 2 *****/
 DROP TABLE IF EXISTS Royalties;
 CREATE TEMPORARY TABLE Royalties
 SELECT	titleauthor.title_id AS TITLE_ID,
@@ -63,4 +65,17 @@ GROUP BY TITLE_ID, AUTHOR_ID, ADVANCE, ROYALTYPER;
 SELECT * FROM AuthorsProfit;
 
 SELECT 	AUTHOR_ID, TOTAL_ROYALTY + ADVANCE * ROYALTYPER / 100 AS PROFITS
-FROM AuthorsProfit;
+FROM AuthorsProfit
+ORDER BY PROFITS DESC
+LIMIT 3;
+
+/***** Challenge 3 *****/
+DROP TABLE IF EXISTS most_profiting_authors;
+CREATE TABLE most_profiting_authors
+SELECT 	AUTHOR_ID, TOTAL_ROYALTY + ADVANCE * ROYALTYPER / 100 AS PROFITS
+FROM AuthorsProfit
+ORDER BY PROFITS DESC
+LIMIT 3;
+
+SELECT * FROM most_profiting_authors;
+
