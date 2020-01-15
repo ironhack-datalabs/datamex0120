@@ -21,8 +21,52 @@ GROUP BY au.au_id
 ORDER BY title_count DESC;
 
 # challenge 3
-SELECT au.au_id, au.au_lname, au.au_fname
-FROM authors as au
+SELECT authors.au_id, authors.au_lname, authors.au_fname, SUM(sales.qty) as total
+FROM authors
+RIGHT JOIN titleauthor 
+ON authors.au_id = titleauthor.au_id
+RIGHT JOIN sales
+ON titleauthor.title_id = sales.title_id
+GROUP BY authors.au_id
+ORDER BY total desc
+LIMIT 3;
 
+#challenge 4
+
+SELECT authors.au_id, authors.au_lname, authors.au_fname, IFNULL(SUM(sales.qty),0) as total
+FROM authors
+RIGHT JOIN titleauthor 
+ON authors.au_id = titleauthor.au_id
+RIGHT JOIN sales
+ON titleauthor.title_id = sales.title_id
+GROUP BY authors.au_id
+ORDER BY total desc
+LIMIT 23;
+
+# BONUS 
+SELECT authors.author_id, authors.au_lname, authors.au_fname, 
+titles.advance + IFNULL(sales.qty,0)* IFNULL(titles.price,0)*titleauthor.royaltyper/100) as profit
+FROM authors
+RIGHT JOIN titleauthor
+ON authors.au_id = titleauthor.au_id
+RIGHT JOIN titles
+ON titleauthor.title_id = titles.title_id
+RIGHT JOIN roysched
+ON titles.title_id = roysched.title_id
+GROUP BY authors.author_id 
+ORDER BY profit
+LIMIT 3;
+
+SELECT authors.au_id, authors.au_lname, authors.au_fname, titles.advance + IFNULL(sales.qty,0)*IFNULL(titles.price,0)*titleauthor.royaltyper/100 as profit
+FROM authors
+RIGHT JOIN titleauthor
+ON authors.au_id = titleauthor.au_id
+RIGHT JOIN titles
+ON titleauthor.title_id = titles.title_id
+RIGHT JOIN roysched
+ON titles.title_id = roysched.title_id
+GROUP BY authors.au_id
+ORDER BY profit
+LIMIT 3;
 
 
