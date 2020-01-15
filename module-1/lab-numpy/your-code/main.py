@@ -49,9 +49,11 @@ print(c)
 print(a.shape)
 print(c.shape)
 
+d = a + c
 
 #11. Print a and d. Notice the difference and relation of the two array in terms of the values? Explain.
-
+print(a)
+print(d)
 
 
 
