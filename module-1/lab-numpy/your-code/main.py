@@ -135,3 +135,41 @@ array([[[ 75.,  75.,  75.,  25.,  75.],
         [ 25.,  75.,   0.,  75.,  75.]]])
 """
 print('f\n',f)
+
+"""
+#18. Bonus question: instead of using numbers (i.e. 0, 25, 50, 75, and 100), how to use string values 
+("A", "B", "C", "D", and "E") to label the array elements? You are expecting the result to be:
+array([[[ 'D',  'D',  'D',  'B',  'D'],
+        [ 'D',  'D',  'B',  'B',  'B'],
+        [ 'D',  'B',  'D',  'D',  'D']],
+
+       [[ 'B',  'B',  'B',  'B',  'E'],
+        [ 'D',  'D',  'D',  'D',  'D'],
+        [ 'B',  'D',   'A',  'D', 'D']]])
+Again, you don't need Numpy in this question.
+"""
+
+h=[[[x for y in range(5)]for y in range(3)]for z in range(2)]
+for x in range(2):
+    for y in range(3):
+        for z in range(5):
+            h[x][y][z]=''
+
+h = np.array(h)
+
+
+
+for x in range(2):
+    for y in range(3):
+        for z in range(5):
+            if d[(x,y,z)] == d_max:
+                h[x][y][z]='E'
+            elif d[(x,y,z)] == d_min:
+                h[x][y][z]='A'
+            elif d[(x,y,z)] == d_mean:
+                h[x][y][z]='C'
+            elif d[(x,y,z)] > d_min and d[(x,y,z)] <  d_mean:
+                h[x][y][z]='B'
+            elif d[(x,y,z)] < d_max and d[(x,y,z)] >  d_mean: 
+                h[x][y][z]='D'
+print(h)
