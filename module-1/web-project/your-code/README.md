@@ -1,2 +1,3 @@
-el csv inicial fue extraido de https://www.kaggle.com/bigquery/ethereum-blockchain, el objetivo de este proyecto es obtener los datos historicos de ethereum, extraer de distintas fuentes
+el csv inicial fue extraido de https://www.kaggle.com/bigquery/ethereum-blockchain, la primera api a la cual se le consulto fue https://www.cryptocompare.com/api/ solamente se extraera de esta
+api el valor historico de ethereum en dolares y en bitcoins,  el objetivo de este proyecto es obtener los datos historicos de ethereum, extraer de distintas fuentes
 el precio historico y encontrar datos estadisticos de estos datos, tambien hacer graficas mostrando el comportamiento de los precios en el mercado desde su salida.
