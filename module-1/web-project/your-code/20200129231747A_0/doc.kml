@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>20200129231747A_0</name>
+    <StyleMap id="failed">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#failed1</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#failed0</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="failed0">
+      <IconStyle>
+        <scale>1.0</scale>
+        <Icon>
+          <href>Files/earthquake.png</href>
+        </Icon>
+        <hotSpot x="0.6" y="0" xunits="fraction" yunits="fraction" />
+      </IconStyle>
+      <ListStyle>
+</ListStyle>
+    </Style>
+    <Style id="failed1">
+      <IconStyle>
+        <scale>0.7</scale>
+        <Icon>
+          <href>Files/earthquake.png</href>
+        </Icon>
+        <hotSpot x="0.7" y="0" xunits="fraction" yunits="fraction" />
+      </IconStyle>
+      <ListStyle>
+</ListStyle>
+    </Style>
+    <StyleMap id="esta">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#esta1</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#esta0</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="esta0">
+      <IconStyle>
+        <scale>0.8</scale>
+        <Icon>
+          <href>Files/Estacion.png</href>
+        </Icon>
+        <hotSpot x="0.4" y="0" xunits="fraction" yunits="fraction" />
+      </IconStyle>
+      <ListStyle>
+</ListStyle>
+    </Style>
+    <Style id="esta1">
+      <IconStyle>
+        <scale>0.5</scale>
+        <Icon>
+          <href>Files/Estacion.png</href>
+        </Icon>
+        <hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction" />
+      </IconStyle>
+      <ListStyle>
+</ListStyle>
+    </Style>
+    <Folder>
+      <name>Sismo20200129231747A_0.kmz</name>
+      <description>Mapa de intensidades en tiempo real. Generado automáticamente con datos preliminares.</description>
+      <GroundOverlay>
+        <name>PGA</name>
+        <description>Mapa de aceleraciones máximas del terreno (cm/s**2).</description>
+        <color>8cffffff</color>
+        <Icon>
+          <href>Files/ShakeMapPGA.jpeg</href>
+        </Icon>
+        <LatLonBox>
+          <north>21.9</north>
+          <south>13.9</south>
+          <east>-93.18</east>
+          <west>-107.18</west>
+          <rotation>-0.0585</rotation>
+        </LatLonBox>
+      </GroundOverlay>
+      <ScreenOverlay>
+        <name>Escala de PGA</name>
+        <Icon>
+          <href>Files/Escala_MacroS.png</href>
+        </Icon>
+        <overlayXY x="0" y="1" xunits="fraction" yunits="fraction" />
+        <screenXY x="0" y="1" xunits="fraction" yunits="fraction" />
+        <rotationXY x="0.5" y="0.5" xunits="fraction" yunits="fraction" />
+        <size x="-1" y="-1" xunits="pixels" yunits="pixels" />
+      </ScreenOverlay>
+      <ScreenOverlay>
+        <name>Generación: IINGEN, UNAM</name>
+        <Icon>
+          <href>Files/IIngen_KMZ.png</href>
+        </Icon>
+        <overlayXY x="0" y="0" xunits="fraction" yunits="fraction" />
+        <screenXY x="0" y="0" xunits="fraction" yunits="fraction" />
+        <rotationXY x="0.5" y="0.5" xunits="fraction" yunits="fraction" />
+        <size x="-1" y="-1" xunits="pixels" yunits="pixels" />
+      </ScreenOverlay>
+      <Placemark>
+        <name>Evento:20200129231747A_0</name>
+        <description>&lt;![CDATA[Evento: &lt;br/&gt;&lt;li&gt;20200129231747A_0&lt;/li&gt;&lt;br /&gt;&lt;li&gt;M: 5.2&lt;/li&gt;&lt;li&gt;Lat: 16.74&lt;/li&gt;&lt;li&gt;Lon: -100.18&lt;/li&gt;&lt;li&gt;Prof (km): 10&lt;/li&gt;&lt;/ul&gt;&lt;a]]&gt;</description>
+        <LookAt>
+          <longitude>-100.18</longitude>
+          <latitude>16.74</latitude>
+          <altitude>ShakeMapPGA.jpeg</altitude>
+          <range>738827.8803251569</range>
+          <tilt>20200129231747A_0</tilt>
+          <heading>1.169933829707144e-014</heading>
+        </LookAt>
+        <styleUrl>#failed</styleUrl>
+        <Point>
+          <coordinates>-100.18,16.74</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Estaciones de registro</name>
+      <description>Estaciones con las cuáles se generó el mapa de intensidades</description>
+      <Placemark>
+        <name>ACP2</name>
+        <description>&lt;![CDATA[Estación: &lt;br/&gt;&lt;li&gt;ACAPULCO PREPARATORIA No. 2&lt;/li&gt;&lt;br /&gt;&lt;li&gt;Estado: GRO&lt;/li&gt;&lt;li&gt;Lat: 16.87&lt;/li&gt;&lt;li&gt;Lon: -99.89&lt;/li&gt;&lt;li&gt;PGA: 44.56&lt;/li&gt;&lt;/ul&gt;&lt;a]]&gt;</description>
+        <LookAt>
+          <longitude>-99.886505</longitude>
+          <latitude>16.874294</latitude>
+          <altitude>ShakeMapPGA.jpeg</altitude>
+          <range>738827.8803251569</range>
+          <tilt>ACP2</tilt>
+          <heading>1.169933829707144e-014</heading>
+        </LookAt>
+        <styleUrl>#esta</styleUrl>
+        <Point>
+          <coordinates>-99.886505,16.874294</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CAIG</name>
+        <description>&lt;![CDATA[Estación: &lt;br/&gt;&lt;li&gt;EL CAYACO&lt;/li&gt;&lt;br /&gt;&lt;li&gt;Estado: GRO&lt;/li&gt;&lt;li&gt;Lat: 17.05&lt;/li&gt;&lt;li&gt;Lon: -100.27&lt;/li&gt;&lt;li&gt;PGA: 25.61&lt;/li&gt;&lt;/ul&gt;&lt;a]]&gt;</description>
+        <LookAt>
+          <longitude>-100.267275</longitude>
+          <latitude>17.0485</latitude>
+          <altitude>ShakeMapPGA.jpeg</altitude>
+          <range>738827.8803251569</range>
+          <tilt>CAIG</tilt>
+          <heading>1.169933829707144e-014</heading>
+        </LookAt>
+        <styleUrl>#esta</styleUrl>
+        <Point>
+          <coordinates>-100.267275,17.0485</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>COYC</name>
+        <description>&lt;![CDATA[Estación: &lt;br/&gt;&lt;li&gt;COYUCA&lt;/li&gt;&lt;br /&gt;&lt;li&gt;Estado: GRO&lt;/li&gt;&lt;li&gt;Lat: 17.00&lt;/li&gt;&lt;li&gt;Lon: -100.09&lt;/li&gt;&lt;li&gt;PGA: 20.98&lt;/li&gt;&lt;/ul&gt;&lt;a]]&gt;</description>
+        <LookAt>
+          <longitude>-100.089963</longitude>
+          <latitude>16.997788</latitude>
+          <altitude>ShakeMapPGA.jpeg</altitude>
+          <range>738827.8803251569</range>
+          <tilt>COYC</tilt>
+          <heading>1.169933829707144e-014</heading>
+        </LookAt>
+        <styleUrl>#esta</styleUrl>
+        <Point>
+          <coordinates>-100.089963,16.997788</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ATYC</name>
+        <description>&lt;![CDATA[Estación: &lt;br/&gt;&lt;li&gt;ATOYAC&lt;/li&gt;&lt;br /&gt;&lt;li&gt;Estado: GRO&lt;/li&gt;&lt;li&gt;Lat: 17.21&lt;/li&gt;&lt;li&gt;Lon: -100.43&lt;/li&gt;&lt;li&gt;PGA: 3.91&lt;/li&gt;&lt;/ul&gt;&lt;a]]&gt;</description>
+        <LookAt>
+          <longitude>-100.432269</longitude>
+          <latitude>17.213361</latitude>
+          <altitude>ShakeMapPGA.jpeg</altitude>
+          <range>738827.8803251569</range>
+          <tilt>ATYC</tilt>
+          <heading>1.169933829707144e-014</heading>
+        </LookAt>
+        <styleUrl>#esta</styleUrl>
+        <Point>
+          <coordinates>-100.432269,17.213361</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
