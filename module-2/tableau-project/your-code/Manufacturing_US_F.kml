@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1">
+        <Placemark id="3">
+            <name>Manuf</name>
+            <Point id="2">
+                <coordinates>-77.083389,38.96524,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="5">
+            <name>Manuf</name>
+            <Point id="4">
+                <coordinates>-73.427439,41.143608,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="7">
+            <name>Manuf</name>
+            <Point id="6">
+                <coordinates>-74.455515,40.795862,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="9">
+            <name>Manuf</name>
+            <Point id="8">
+                <coordinates>-121.9317123,37.4757209,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="11">
+            <name>Manuf</name>
+            <Point id="10">
+                <coordinates>-121.998365,37.371138,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="13">
+            <name>Manuf</name>
+            <Point id="12">
+                <coordinates>-111.8591619,33.3253347,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="15">
+            <name>Manuf</name>
+            <Point id="14">
+                <coordinates>-95.064003,29.5399005,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="17">
+            <name>Manuf</name>
+            <Point id="16">
+                <coordinates>-121.915418,37.383175,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="19">
+            <name>Manuf</name>
+            <Point id="18">
+                <coordinates>-122.035378,37.394118,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="21">
+            <name>Manuf</name>
+            <Point id="20">
+                <coordinates>-118.1731,35.0528,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="23">
+            <name>Manuf</name>
+            <Point id="22">
+                <coordinates>-113.991642,51.087738,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="25">
+            <name>Manuf</name>
+            <Point id="24">
+                <coordinates>-71.179801,42.225617,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="27">
+            <name>Manuf</name>
+            <Point id="26">
+                <coordinates>-71.26634,42.525898,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="29">
+            <name>Manuf</name>
+            <Point id="28">
+                <coordinates>-86.24951949999999,39.8846398,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="31">
+            <name>Manuf</name>
+            <Point id="30">
+                <coordinates>-80.20973470000001,25.8870885,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="33">
+            <name>Manuf</name>
+            <Point id="32">
+                <coordinates>-84.9888038,37.0678279,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="35">
+            <name>Manuf</name>
+            <Point id="34">
+                <coordinates>-97.198261,31.497671999999998,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="37">
+            <name>Manuf</name>
+            <Point id="36">
+                <coordinates>-79.9580699,36.041366499999995,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="39">
+            <name>Manuf</name>
+            <Point id="38">
+                <coordinates>-87.8454515,43.728261700000004,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="41">
+            <name>Manuf</name>
+            <Point id="40">
+                <coordinates>-97.3222912,32.8159619,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="43">
+            <name>Manuf</name>
+            <Point id="42">
+                <coordinates>-79.1765302,35.542873799999995,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="45">
+            <name>Manuf</name>
+            <Point id="44">
+                <coordinates>-90.46928270000001,36.0912578,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="47">
+            <name>Manuf</name>
+            <Point id="46">
+                <coordinates>-118.3196199,34.1837193,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="49">
+            <name>Manuf</name>
+            <Point id="48">
+                <coordinates>-117.65392659999998,33.675973,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="51">
+            <name>Manuf</name>
+            <Point id="50">
+                <coordinates>-118.0364871,33.738060299999994,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="53">
+            <name>Manuf</name>
+            <Point id="52">
+                <coordinates>-121.78045039999999,37.232110799999994,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="55">
+            <name>Manuf</name>
+            <Point id="54">
+                <coordinates>-121.492461,38.578333,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="57">
+            <name>Manuf</name>
+            <Point id="56">
+                <coordinates>-122.30420320000002,37.879056899999995,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="59">
+            <name>Manuf</name>
+            <Point id="58">
+                <coordinates>-122.0310129,37.5259266,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="61">
+            <name>Manuf</name>
+            <Point id="60">
+                <coordinates>-117.7303733,34.031250799999995,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="63">
+            <name>Manuf</name>
+            <Point id="62">
+                <coordinates>-121.443624,38.607108000000004,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="65">
+            <name>Manuf</name>
+            <Point id="64">
+                <coordinates>-120.50981499999999,37.315838899999996,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="67">
+            <name>Manuf</name>
+            <Point id="66">
+                <coordinates>-84.54910190000001,39.1062969,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="69">
+            <name>Manuf</name>
+            <Point id="68">
+                <coordinates>-84.506713,39.342159,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="71">
+            <name>Manuf</name>
+            <Point id="70">
+                <coordinates>-81.81312779999999,41.415867,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="73">
+            <name>Manuf</name>
+            <Point id="72">
+                <coordinates>-81.38127890000001,41.6599092,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="75">
+            <name>Manuf</name>
+            <Point id="74">
+                <coordinates>-82.972765,39.984266,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="77">
+            <name>Manuf</name>
+            <Point id="76">
+                <coordinates>-84.2464363,39.378637700000006,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="79">
+            <name>Manuf</name>
+            <Point id="78">
+                <coordinates>-82.0468099,41.4684831,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="81">
+            <name>Manuf</name>
+            <Point id="80">
+                <coordinates>-81.2511949,41.0381682,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="83">
+            <name>Manuf</name>
+            <Point id="82">
+                <coordinates>-81.7643305,40.44368920000001,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="85">
+            <name>Manuf</name>
+            <Point id="84">
+                <coordinates>-83.782318,39.894087,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="87">
+            <name>Manuf</name>
+            <Point id="86">
+                <coordinates>-95.5771665,29.8827092,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="89">
+            <name>Manuf</name>
+            <Point id="88">
+                <coordinates>-98.37996600000001,29.601374699999997,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="91">
+            <name>Manuf</name>
+            <Point id="90">
+                <coordinates>-98.393129,29.485895000000003,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="93">
+            <name>Manuf</name>
+            <Point id="92">
+                <coordinates>-95.267004,30.329165000000003,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="95">
+            <name>Manuf</name>
+            <Point id="94">
+                <coordinates>-97.5883887,30.494465,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="97">
+            <name>Manuf</name>
+            <Point id="96">
+                <coordinates>-96.8562959,33.642884,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="99">
+            <name>Manuf</name>
+            <Point id="98">
+                <coordinates>-95.6016416,29.851031300000002,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="101">
+            <name>Manuf</name>
+            <Point id="100">
+                <coordinates>-98.2738029,26.1514652,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="103">
+            <name>Manuf</name>
+            <Point id="102">
+                <coordinates>-98.387973,29.5362435,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="105">
+            <name>Manuf</name>
+            <Point id="104">
+                <coordinates>-96.609054,32.775737899999996,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

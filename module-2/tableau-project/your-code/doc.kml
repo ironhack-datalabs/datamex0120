@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Mapa sin nombre</name>
+    <description/>
+    <Style id="icon-1899-0288D1-nodesc-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-1.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-nodesc-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-1.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Capa sin nombre</name>
+      <Placemark>
+        <name>Watlow Electric Manufacturing Company</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -121.7804504,37.2321108,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hurco Companies, Inc.</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -86.2495195,39.8846398,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Us Ice Machine Manufacturing Company</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -80.2097347,25.8870885,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Superior Battery Manufacturing Company, Inc.</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -84.9888038,37.0678279,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Versalift, a Time Manufacturing Company</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -97.198261,31.497672,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Patheon High Point Manufacturing Facility Site</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -79.9580699,36.0413665,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bemis Manufacturing Company</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -87.8454515,43.7282617,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[M&M Manufacturing Company]]></name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -97.3222912,32.8159619,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pfizer Pharmaceutical Manufacturing Plant</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -79.1765302,35.5428738,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Utility Trailer Manufacturing Company (Factory)</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -90.4692827,36.0912578,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Southern California Manufacturing Group</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -118.3196199,34.1837193,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Carr Manufacturing Company ( CMC )</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -117.6539266,33.675973,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bent Manufacturing Company BDAA, Inc</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -118.0364871,33.7380603,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Watlow Electric Manufacturing Company</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -121.7804504,37.2321108,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[California Manufacturing & Tch]]></name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -121.492461,38.578333,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Terminal Manufacturing Company, LLC</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -122.3042032,37.8790569,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Crown Manufacturing Co Inc</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -122.0310129,37.5259266,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>F-D-S Manufacturing Co</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -117.7303733,34.0312508,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Metal Manufacturing Company Inc.</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -121.443624,38.607108,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>California Industrial Rubber</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -120.509815,37.3158389,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nehemiah Manufacturing Company</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -84.5491019,39.1062969,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Connector Manufacturing Co</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -84.506713,39.342159,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ohio Envelope Manufacturing Company</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -81.8131278,41.415867,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>E Manufacturing Co., Inc.</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -81.3812789,41.6599092,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Industrial Pattern & Manufacturing Co]]></name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -82.972765,39.984266,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ADVICS Manufacturing Ohio, Inc.</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -84.2464363,39.3786377,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>AJ Rose Manufacturing Co.</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -82.0468099,41.4684831,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>East Manufacturing Corporation</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -81.2511949,41.0381682,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Crawford Manufacturing Co</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -81.7643305,40.4436892,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sweet Manufacturing Company</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -83.782318,39.894087,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sun Manufacturing Co</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -95.5771665,29.8827092,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cox Manufacturing Company</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -98.379966,29.6013747,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Berridge Manufacturing Company - Distribution Center</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -98.393129,29.485895,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rig Component Manufacturing Companies</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -95.267004,30.329165,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Global Scuba Manufacturing of Texas LLC</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -97.5883887,30.494465,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Texas Manufacturing Company</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.8562959,33.642884,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rilco Manufacturing Company, Inc.</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -95.6016416,29.8510313,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Smead Manufacturing Company</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -98.2738029,26.1514652,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Markle Manufacturing Company</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -98.387973,29.5362435,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tejas Manufacturing Company</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.609054,32.7757379,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
