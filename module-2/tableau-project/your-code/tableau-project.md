@@ -35,7 +35,7 @@ _Haciendo más investigación sobre los puntos anteriores:_
 
 __A partir de lo anterior, se plantea como propuesta la creación de un coding bootcamp en, o los alrededores de NYC, el enfoque sería capacitar a las personas que tengan interés en desarrollo web y análisis de datos y que no cuenten con una formación acádemica formal.__
 
-_¿Pero... qué tenemos que condiderar si elegimos uno de los estados con mayor índice de startups y oferta de coding bootcamps?_
+_¿Pero... qué tenemos que considerar si elegimos uno de los estados con mayor índice de startups y oferta de coding bootcamps?_
 - Algunos de los diferenciadores frente a la competencia serían la duración y el costo del bootcamp, el cual podría adecuarse a un mercado como el de hispanohablantes y/o nativos que no tienen una formación profesional comprobable pero cuentan con los skills para aplicar a una vacante del giro tecnologíco. Actualmente el promedio de costo está alrededor de 16Kusd con una duración de 15 semanas.
 - Sería interesante también analizar la proyección de [crecimiento de la población en NY](https://www.kaggle.com/pcharambira/new-york-city-population) que se hizo de 2010 a 2040 por grupos de edad y por región.
 - Evidentemente es necesario un ánalisis de mercado en el área elegida para detectar fortalezas, debilidades y retos para descartar esta ciudad o elegir alguna zona a su alrededor.
