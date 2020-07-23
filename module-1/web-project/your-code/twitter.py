@@ -1,5 +1,6 @@
 '''
 # Some good resources:
+#: 
 https://towardsdatascience.com/how-to-access-twitters-api-using-tweepy-5a13a206683b
 # I likee this method, esentially the author gets various follower and then uses those follower
 # ids to get the timelines of speicif people
